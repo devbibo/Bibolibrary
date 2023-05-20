@@ -1,63 +1,114 @@
-body {
-    font-family: montserrat;
-    background: linear-gradient(to right, #8BA4F9 , #7C32FF , #cbcbcb);
-  }
-  
-  main {
-    width: 80%;
-    margin: 0 auto;
-  
-  }
-  
-  h1 {
-    margin-top: 2em;
-    text-align: center;
-    font-size: 3em; 
-    color:floralwhite;
-  }
-  
-  h2 {
-    text-align: center;
-    font-size: 1.5em;
-    color: #ccd2e4;
-  }
-  
-  footer {
-    background-color: #333;
-    color: #fff;  
-    padding: 30px 0;  
-  }
-  
-  .footer-nav li {
-    display: inline-block;  
-    margin: 0 20px;
-  }
-  
-  .footer-nav a {
-    color: #fff;
-    font-size: 1.2em;
-  }
-  
-  .social li {
-    display: inline-block;
-  }
-  
-  
+/* Global styles */
 
+body {
+  font-family: montserrat;
+  background: linear-gradient(to right, #8BA4F9 , #7C32FF , #cbcbcb);
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+h1 {
+  margin-top: 2em;
+  text-align: center;
+  font-size: 3em; 
+  color:floralwhite;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.5em;
+  color: #ccd2e4;
+}
+
+footer {
+  position: absolute;  
+  bottom: 0;  
+  left: 0;   
+  height: 50px;   
+  width: 100%;     
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card styles */
+
+.card {
+  background: linear-gradient(to right, #8BA4F9 , #bc95ff , #cbcbcb);
+  width: 20%;  
+
+  margin-right: 1.5em;
+  margin-top: 1.5em;
+  float: left;    
+  border-radius: 2em; 
+  padding-bottom: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
+  display: flex;
+  justify-content: center;
+}
+
+.card h3 {
+  font-size: 1.5em;
+  text-align: center;
+  color: white;
+}
+
+.card p {
+  font-size: 0.9em;
+  text-align: center;
+  color: white;
+}
+
+.card-content {
+  height: 13em; 
+  overflow: hidden;
+  margin-top: 0.8em;
+}
+
+.card-content button {
+  background-color: #a380df;
+  border-radius: 1em;
+  border: 0;
+  color: white;
+  display: block;
+  font-size: 1em;
+  margin: 2em auto 0;
+  padding: 0.5em 1em;
+  transition: background-color 0.3s ease-out;
+  cursor: pointer;
+  font-family: montserrat;
+}
+
+.card-content button:hover {
+  background-color: #8557c9;
+}
+
+
+@media (max-width: 768px) {
+  main {
+    width: 90%;
+  }
+  
   .card {
-    background-color: white;
-    width: 30%;  
-    margin: 20px;  
-    float: left;    
+    width: 45%;
+    margin-right: 0.75em;
+    margin-bottom: 1.5em;
+  }
+}
+
+@media (max-width: 576px) {
+  main {
+    width: 100%;
   }
   
-  .card-content {
-   padding: 20px;   
+  .card {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 1.5em;
   }
-  
-  @media (max-width: 600px) {
-    .card {
-      width: 100%;
-      float: none;
-    }    
-  }
+}
